@@ -1,0 +1,11 @@
+server:
+  servlet:
+    context-path: /roger-springboot
+  port: '8080'
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  application:
+    name: SpringBoot-MVC-test
