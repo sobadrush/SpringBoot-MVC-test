@@ -8,5 +8,7 @@
 
     <body>
         <h1 style="color: red">SpringBoot Hello_1.jsp!! <span style="color: #0c76cd">${message}</span> </h1>
+
+        <h2>product: ${product}</h2>
     </body>
 </html>

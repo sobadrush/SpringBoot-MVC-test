@@ -12,5 +12,7 @@
         <br/>
         <a href="<%= request.getContextPath() %>/hello3">to hello.jsp (使用 ModelAndView)</a>
         <br/>
+        <a href="<%= request.getContextPath() %>/hello4">to hello.jsp (使用 @ModelAttribute)</a>
+        <br/>
     </body>
 </html>
