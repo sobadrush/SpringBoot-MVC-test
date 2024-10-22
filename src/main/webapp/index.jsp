@@ -6,6 +6,11 @@
     <body>
         <h1>index.jsp</h1>
 
-        <a href="<%= request.getContextPath() %>/hello">to hello.jsp</a>
+        <a href="<%= request.getContextPath() %>/hello1">to hello.jsp (使用 HttpServletRequest)</a>
+        <br/>
+        <a href="<%= request.getContextPath() %>/hello2?empName=RogerLo">to hello.jsp (使用 Model)</a>
+        <br/>
+        <a href="<%= request.getContextPath() %>/hello3">to hello.jsp (使用 ModelAndView)</a>
+        <br/>
     </body>
 </html>
