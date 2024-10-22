@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -48,5 +49,15 @@ public class HelloController {
         System.out.println("Product : " + productGG);
         System.out.println("查看 model = " + model);
         return "hello";
+    }
+
+    @ModelAttribute("ProductList")
+    public List<Product> getProductList() {
+        System.err.println(" >>>>> @ModelAttribute(\"ProductList\") <<<<< ");
+        return List.of(
+            Product.builder().id(1001L).name("Apple Watch 1").price(new BigDecimal("56.99")).build(),
+            Product.builder().id(1002L).name("Apple Pencil").price(new BigDecimal("23.87")).build(),
+            Product.builder().id(1003L).name("iphone 21").price(new BigDecimal("58.23")).build()
+        );
     }
 }
